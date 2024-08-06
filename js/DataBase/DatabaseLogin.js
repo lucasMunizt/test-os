@@ -4,7 +4,7 @@ import { auth, signInWithEmailAndPassword } from './config/configDataBase.js';
     try {
         await signInWithEmailAndPassword(auth, email, senha);
         console.log("Login bem-sucedido");
-        window.location.href = "./menu.html";
+        window.location.href = "../menu.html";
     } catch (error) {
         console.error("Erro de login:", error.message);
     }
